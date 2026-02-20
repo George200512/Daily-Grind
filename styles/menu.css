@@ -1,0 +1,62 @@
+.heading{
+color: var(--primary-color);
+text-align: center;
+padding: 2rem;
+}
+
+.coffee-drinks, .tea-and-others, .food-container{
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	padding: 1rem;
+	background: var(--secondary-color);
+	border-radius: 1rem;
+	box-shadow: 0.1rem 0.1rem;
+	margin: 1rem;
+}
+
+main{
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+	align-items: center;
+}
+img{
+	width: 5rem;
+	border-radius: 1rem;
+}
+
+.c-drinks, .t-drinks, .foods{
+	display: flex;
+	flex-direction: column;
+	gap: 1.5rem;
+	padding: 1rem;
+	align-items: center;
+}
+
+.c-drink, .t-drink, .food{
+	display: flex;
+	flex-direction: row;
+	gap: 1rem;
+	padding: 1rem;
+	justify-content: center;
+	align-items: center;
+}
+
+.c-drink:hover, .t-drink:hover, .food:hover{
+	border-radius: 2rem;
+	border: 0.1rem solid var(--primary-color);
+}
+
+.s-heading{
+	border-bottom: 0.1rem solid var(--primary-color);
+	padding: 2rem;
+	border-radius: 2rem;
+}
+
+@media screen and (min-width: 922px){
+	main{
+		flex-direction: row;
+		align-items: stretch;
+	}
+}
