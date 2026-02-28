@@ -41,6 +41,7 @@ body{
 	top: 0;
 	left: 0;
 	right: 0;
+	z-index: 999;
 }
 
 .menu-btn{
@@ -70,6 +71,7 @@ body{
 	margin-top: 6rem;
 	transform: translateX(-100%);
 	transition: transform 0.7s ease ;
+	z-index: 999;
 }
 
 .menu-box ul{
@@ -112,11 +114,11 @@ main{
 
 @keyframes expand_contract{
 	0%{
-		scale: 1;
+		transform: scale(1.0);
 	}
 
 	100%{
-		scale: 2;
+		transform: scale(1.2);
 	}
 }
 
