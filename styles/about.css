@@ -1,0 +1,62 @@
+.section-1{
+	display: flex;
+	flex-direction: column;
+	gap: 1.5rem;
+	align-items: center;
+	padding: 2rem 1.3rem;
+}
+
+.description{
+	color: var(--primary-color);
+	line-height: 1.7rem;
+}
+
+.section-1, .description{
+	transition: all 0.5s ease;
+	transform: translateY(-0.9rem);
+	opacity: 0;
+}
+
+.section-2, .division-1{
+	display: flex;
+	flex-direction: column;
+	gap: 1.5rem;
+	padding: 1.5rem 1.3rem;
+}
+
+.section-2{
+	gap: 2rem;
+}
+
+.division-1{
+	transform: translateY(1rem);
+}
+
+.section-2 img{
+	width: 15rem;
+	border-radius: 1rem;
+	margin: 0 auto ;
+	transform: translateY(-1rem);
+}
+
+.section-2, .section-2 img{
+	transition: all 0.7s ease;
+	opacity: 0;
+}
+
+.section-3{
+	background: inherit;
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+}
+
+.section-3 h2{
+	color: var(--primary-color);
+	padding-bottom: 1.3rem;
+	border-bottom: 0.1rem solid;
+}
+
+.team img{
+	width: 15rem;
+}
