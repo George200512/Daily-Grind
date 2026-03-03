@@ -6,12 +6,12 @@
 	padding: 2rem 1.3rem;
 }
 
-.description{
+.s1-description, .s2-description{
 	color: var(--primary-color);
 	line-height: 1.7rem;
 }
 
-.section-1, .description{
+.s1-description, .s2-description{
 	transition: all 0.5s ease;
 	transform: translateY(-0.9rem);
 	opacity: 0;
@@ -30,16 +30,17 @@
 
 .division-1{
 	transform: translateY(1rem);
+	transition: all 0.5s ease;
 }
 
-.section-2 img{
+.staff-img, section-2{
 	width: 15rem;
 	border-radius: 1rem;
 	margin: 0 auto ;
 	transform: translateY(-1rem);
 }
 
-.section-2, .section-2 img{
+.staff-img{
 	transition: all 0.7s ease;
 	opacity: 0;
 }
@@ -59,4 +60,34 @@
 
 .team img{
 	width: 15rem;
+	border-radius: 0.5rem;
+}
+
+.bio{
+	color: black;
+	line-height: 1.6;
+	transition: all ease 0.5s;
+	opacity: 0;
+	transform: translateY(1.5rem);
+}
+
+.team, .staff{
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+	align-items: center; 
+}
+
+.team{
+	background: var(--secondary-color);
+}
+
+.name{
+	color: var(--primary-color);
+	font-weight: bold;
+	align-self: flex-end;
+}
+
+.staff{
+gap: 1rem;
 }
