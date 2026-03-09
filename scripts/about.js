@@ -14,9 +14,8 @@ const observer = new IntersectionObserver(entries => {
 );
 
 observer.observe($(".s1-description")[0]);
-observer.observe($(".section-2")[0]);
 $(".bio").each((idx, ele) => {
 	observer.observe(ele);
 });
-observer.observe($(".section-2 img")[0]);
-});
+}
+);

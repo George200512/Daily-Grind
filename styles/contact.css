@@ -57,6 +57,8 @@ form{
 	align-items: stretch;
 	gap: 1.5rem;
 	padding: 1rem;
+	border: 0.1rem solid var(--primary-color);
+	border-radius: 2rem;
 }
 
 .field{
@@ -88,16 +90,15 @@ input:focus, textarea:focus{
 	border: 0.1rem solid var(--primary-color);
 }
 
-input[type='button']{
+button{
 	background: var(--primary-color);
 	padding: 1.2rem;
 	border: var(--primary-color) solid 0.1rem;
 	color: var(--secondary-color);
-	vertical-align: middle;
 	transition: all 0.5ease;
 }
 
-input[type='button']:hover{
+button:active{
 	opacity: 0.6;
 }
 

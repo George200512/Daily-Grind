@@ -11,7 +11,7 @@
 	line-height: 1.7rem;
 }
 
-.s1-description, .s2-description{
+.s1-description{
 	transition: all 0.5s ease;
 	transform: translateY(-0.9rem);
 	opacity: 0;
@@ -28,22 +28,12 @@
 	gap: 2rem;
 }
 
-.division-1{
-	transform: translateY(1rem);
-	transition: all 0.5s ease;
-}
-
 .staff-img, section-2{
 	width: 15rem;
 	border-radius: 1rem;
-	margin: 0 auto ;
-	transform: translateY(-1rem);
+	margin: 0 auto;
 }
 
-.staff-img{
-	transition: all 0.7s ease;
-	opacity: 0;
-}
 
 .section-3{
 	background: inherit;
@@ -90,4 +80,14 @@
 
 .staff{
 gap: 1rem;
+}
+
+@media screen and (min-width: 922px){
+	.section-2, .staff{
+		flex-direction: row;
+	}
+
+	.staff{
+		gap: 1.6rem;
+	}
 }
